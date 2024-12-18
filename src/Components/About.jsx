@@ -14,11 +14,10 @@ const About = () => {
           />
         </div>
 
-        {/* Content Section */}
+      
         <div className="lg:w-2/3 lg:pl-16 text-center lg:text-left">
          
 
-          {/* Description */}
           <p className="text-lg md:text-xl leading-relaxed">
            Hello everyone, I am a <span className="text-primary font-semibold">graphic designer</span> and{" "}
             <span className="text-highlight font-medium">aspiring web developer</span> with a deep passion for combining 

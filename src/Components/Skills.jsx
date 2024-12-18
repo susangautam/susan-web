@@ -5,9 +5,12 @@ const Skills = () => {
     { name: 'JavaScript', logo: 'js.png' },
     { name: 'ReactJS', logo: 'react.png' },
     { name: 'TailwindCSS', logo: 'tailwind.png' },
+    { name: 'Git', logo: 'git.png' },
+    { name: 'Github', logo: 'github.png' },
     { name: 'Photoshop', logo: 'photoshop.png' },
     { name: 'Illustrator', logo: 'illustrator.png' },
     { name: 'Figma', logo: 'figma.png' },
+
   ];
 
   return (

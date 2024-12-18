@@ -5,7 +5,7 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";// Ensure this path points to the correct component
 import Skills from "./Components/Skills";
-import Interior from "./Files/interior";
+
 import Footer from "./Components/Footer";
 
 const App = () => {
@@ -31,7 +31,7 @@ const App = () => {
         />
         
         {/* Interior route */}
-        <Route path="/src/Files/Interior.jsx" element={<Interior/>} />
+        
       </Routes>
     </Router>
   );

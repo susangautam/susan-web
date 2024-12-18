@@ -1,19 +1,14 @@
-import { Link } from 'react-router-dom';
+
 
 const Projects = () => {
   const projects = [
     {
       name: 'Interior Designing',
       description: 'A detailed project showcasing modern and creative interior designs.',
-      link: '/src/Files/Interior.jsx',
-      image: '/src/Files/hero.jpg',
+      link: 'https://github.com/susangautam/Interior-Design-Project',  // GitHub link
+      image: '/public/interior copy.jpg',
     },
-    {
-      name: 'Graphics Designing',
-      description: 'Creative graphic design projects, including logos, banners, and more.',
-      link: '#',
-      image: '/images/graphics.jpg',
-    },
+  
   ];
 
   return (
@@ -34,12 +29,14 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-lg font-bold text-gray-800">{project.name}</h3>
                 <p className="mt-2 text-sm text-gray-600">{project.description}</p>
-                <Link
-                  to={project.link}
+                <a
+                  href={project.link}  
+                  target="_blank"  
+                  rel="noopener noreferrer" 
                   className="inline-block mt-4 text-secondary font-medium hover:underline"
                 >
                   View Project
-                </Link>
+                </a>
               </div>
             </div>
           ))}

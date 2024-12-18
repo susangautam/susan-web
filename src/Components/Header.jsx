@@ -8,7 +8,7 @@ const Header = () => {
     <header className="bg-white text-black sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
        
-          <a href="#home" className="cursor-pointer"><img src="logoo.png" className="h-10"/></a>
+          <a href="#home" className="cursor-pointer"><img src="susan.png" className="h-10"/></a>
        
 
         {/* Desktop Navigation */}
@@ -67,7 +67,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* Mobile Menu Button */}
+      
         <button
           onClick={() => setMenuOpen(!menuOpen)} 
           className="md:hidden text-black focus:outline-none hover:text-secondary cursor-pointer"
@@ -77,7 +77,7 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+
       {menuOpen && (
         <div className="md:hidden bg-white text-black z-40">
           <ul className="flex flex-col space-y-4 p-4">

@@ -30,10 +30,10 @@ const Home = () => {
       id="home"
       className="flex flex-col items-center justify-center h-screen text-black text-center relative overflow-hidden bg-white"
     >
-      {/* Background Animation (Now White) */}
+   
       <div className="absolute top-0 left-0 w-full h-full animate-bgShift"></div>
 
-      {/* Content */}
+  
       <h1 className="text-4xl md:text-6xl font-bold opacity-0 animate-fadeIn text-primary">
         Susan Gautam
       </h1>
@@ -41,7 +41,7 @@ const Home = () => {
         Graphics Designer | Frontend Developer
       </p>
 
-      {/* Section below the content */}
+
       <div className="mt-12 text-lg text-gray-500 opacity-0 animate-fadeIn delay-600">
         <p>Explore my work and experience.</p>
       </div>
