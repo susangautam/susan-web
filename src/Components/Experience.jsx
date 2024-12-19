@@ -39,8 +39,7 @@ const Experience = () => {
   return (
     <section id="experience" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      
-        <h2 className="text-4xl font-bold text-primary text-center mb-10">
+              <h2 className="text-4xl font-bold text-primary text-center mb-10">
           Experience
         </h2>
 
