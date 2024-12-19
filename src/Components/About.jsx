@@ -5,7 +5,7 @@ const About = () => {
       className="py-20 bg-white text-black"
     >
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start px-6 lg:px-16">
-        
+       
         <div className="lg:w-1/3 mb-8 lg:mb-0">
           <img
             src="/profile.jpg" 

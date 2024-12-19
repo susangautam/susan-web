@@ -8,6 +8,12 @@ const Projects = () => {
       link: 'https://github.com/susangautam/Interior-Design-Project', 
       image: '/public/interior copy.jpg',
     },
+    {
+      name: '100 Mini Projects',
+      description: '100 miniprojects using HTML,CSS and JavaScript.',
+      link: 'https://github.com/susangautam/Web-Dev-Challange', 
+      image: 'web.jpg',
+    },
   
   ];
 
