@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-scroll"; // Import the Link component from react-scroll
+import { Link } from "react-scroll"; 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const Header = () => {
           <a href="#home" className="cursor-pointer"><img src="susan.png" className="h-10"/></a>
        
 
-        {/* Desktop Navigation */}
+    
         <nav>
           <ul className="hidden md:flex space-x-12 text-lg mr-10">
             <li>

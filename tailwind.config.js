@@ -17,7 +17,7 @@ export default {
         fadeIn: 'fadeIn 1s ease-in-out forwards',
         slideIn: 'slideIn 1s ease-out forwards',
         zoomIn: 'zoomIn 1s ease-out forwards',
-        bgShift: 'bgShift 10s ease infinite', // Gradient animation for background
+        bgShift: 'bgShift 10s ease infinite', 
       },
       keyframes: {
         fadeIn: {

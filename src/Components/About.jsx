@@ -32,7 +32,7 @@ const About = () => {
             challenge boundaries and inspire creativity. Lets create something exceptional together!
           </p>
 
-          {/* Call to Action */}
+  
           <div className="mt-8">
             <a
               href="https://www.linkedin.com/in/susan-gautam-20502b311/"

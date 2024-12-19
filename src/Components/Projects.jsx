@@ -5,7 +5,7 @@ const Projects = () => {
     {
       name: 'Interior Designing',
       description: 'A detailed project showcasing modern and creative interior designs.',
-      link: 'https://github.com/susangautam/Interior-Design-Project',  // GitHub link
+      link: 'https://github.com/susangautam/Interior-Design-Project', 
       image: '/public/interior copy.jpg',
     },
   
