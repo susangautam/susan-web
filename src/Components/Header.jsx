@@ -9,9 +9,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
        
           <a href="#home" className="cursor-pointer"><img src="susan.png" className="h-10"/></a>
-       
-
-    
+      {/* Nav Bar */}
         <nav>
           <ul className="hidden md:flex space-x-12 text-lg mr-10">
             <li>
@@ -67,7 +65,7 @@ const Header = () => {
           </ul>
         </nav>
 
-      
+      {/*Responsive Functions*/}  
         <button
           onClick={() => setMenuOpen(!menuOpen)} 
           className="md:hidden text-black focus:outline-none hover:text-secondary cursor-pointer"
