@@ -5,10 +5,10 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-primary text-white sticky top-0 z-50 shadow-md">
+    <header className="bg-white text-primary sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
        
-          <a href="#home" className="cursor-pointer"><img src="susan.png" className="h-10"/></a>
+          <a href="#home" className="cursor-pointer"><img src="logo-01.png" className="h-10"/></a>
       {/* Nav Bar */}
         <nav>
           <ul className="hidden md:flex space-x-12 text-lg mr-10">

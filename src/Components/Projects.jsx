@@ -14,6 +14,19 @@ const Projects = () => {
       link: 'https://github.com/susangautam/Web-Dev-Challange', 
       image: 'web.jpg',
     },
+    {
+      name: 'Graphics Designing',
+      description: 'Here are some of my Graphics Designing Projects.',
+      link: 'https://www.behance.net/susangautam1', 
+      image: 'graphics-designing.png',
+    },
+  
+    {
+      name: 'Alime Project',
+      description: 'This is a clone of alime project.',
+      link: 'https://github.com/susangautam/Alime-project', 
+      image: 'graphics-designing.png',
+    },
   
   ];
 
