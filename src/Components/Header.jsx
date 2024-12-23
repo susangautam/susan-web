@@ -75,7 +75,7 @@ const Header = () => {
         </button>
       </div>
 
-
+    {/*Responsive*/}
       {menuOpen && (
         <div className="md:hidden bg-white text-black z-40">
           <ul className="flex flex-col space-y-4 p-4">
