@@ -1,8 +1,9 @@
 import { useEffect } from "react";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa"; 
 
 const Home = () => {
   useEffect(() => {
-    const style = document.createElement('style');
+    const style = document.createElement("style");
     style.innerHTML = `
       @keyframes bgShift {
         0% {
@@ -28,22 +29,60 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center h-screen text-black text-center relative overflow-hidden bg-white"
+      className="flex flex-col md:flex-row items-center justify-center md:justify-between h-screen px-6 md:px-12 bg-white relative overflow-hidden"
     >
-   
-      <div className="absolute top-0 left-0 w-full h-full animate-bgShift"></div>
+      {/* Background Animation */}
+      <div className="absolute top-0 left-0 w-full h-full animate-bgShift opacity-20"></div>
 
-  
-      <h1 className="text-4xl md:text-6xl font-bold opacity-0 animate-fadeIn text-primary">
-        Susan Gautam
-      </h1>
-      <p className="text-xl md:text-2xl mt-4 opacity-0 animate-slideIn delay-200">
-        Graphics Designer | Frontend Developer
-      </p>
+      {/* Left Text Section */}
+      <div className="z-10 max-w-lg md:w-1/2 text-center md:text-left space-y-4">
+        <h1 className="text-5xl md:text-6xl font-bold text-primary">
+          Susan Gautam
+        </h1>
+        <p className="text-lg md:text-xl text-gray-700">
+          Graphics Designer | Frontend Developer
+        </p>
+        <div className="text-gray-600 text-base md:text-md w-96 ">
+          <p>Explore my work and experience in creative design and development.</p>
+        </div>
+        {/* Social Media Icons */}
+        <div className="mt-4 flex space-x-4 justify-center md:justify-start">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white bg-primary p-3 rounded-full shadow-md hover:bg-secondary transition duration-300"
+          >
+            <FaFacebookF className="w-5 h-5" />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white bg-primary p-3 rounded-full shadow-md hover:bg-secondary transition duration-300"
+          >
+            <FaLinkedinIn className="w-5 h-5" />
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white bg-primary p-3 rounded-full shadow-md hover:bg-secondary transition duration-300"
+          >
+            <FaGithub className="w-5 h-5" />
+          </a>
+        </div>
+      </div>
 
-
-      <div className="mt-12 text-lg text-gray-500 opacity-0 animate-fadeIn delay-600">
-        <p>Explore my work and experience.</p>
+      {/* Right Image Section */}
+      <div className="relative flex items-center justify-center md:w-1/2">
+        <div className="relative bg-secondary p-3 rounded-lg shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-300">
+          <img
+            src="profile.jpg"
+            alt="Susan Gautam"
+            className="rounded-lg w-96 h-96 object-cover transform hover:scale-105 transition-transform duration-300"
+          />
+        </div>
       </div>
     </section>
   );

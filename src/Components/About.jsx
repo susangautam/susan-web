@@ -1,46 +1,41 @@
 const About = () => {
   return (
-    <section
-      id="about"
-      className="py-20 bg-white text-black"
-    >
-      <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start px-6 lg:px-16">
-       
-        <div className="lg:w-1/3 mb-8 lg:mb-0">
-          <img
-            src="/profile.jpg" 
-            alt="Susan Gautam"
-            className="rounded-full shadow-lg border-4 border-secondary mx-auto lg:mx-0 w-60 h-60 lg:w-80 lg:h-80 object-cover"
-          />
+    <section id="about" className="py-20 bg-white text-black">
+      <div className="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row">
+        
+        {/* Left Section - Timeline/Skills */}
+        <div className="lg:w-1/2 space-y-6">
+          <h2 className="text-5xl md:text-6xl font-extrabold text-primary">About Me</h2>
+          <ul className="text-lg opacity-80">
+            <li className="mb-4">Graphic Design</li>
+            <li className="mb-4">Web Development (HTML, CSS, JavaScript, React)</li>
+            <li className="mb-4">UI/UX Design</li>
+            <li className="mb-4">Problem Solving & Innovation</li>
+          </ul>
         </div>
 
-      
-        <div className="lg:w-2/3 lg:pl-16 text-center lg:text-left">
-         
-
-          <p className="text-lg md:text-xl leading-relaxed">
-           Hello everyone, I am a <span className="text-primary font-semibold">graphic designer</span> and{" "}
-            <span className="text-highlight font-medium">aspiring web developer</span> with a deep passion for combining 
-            creativity with technical expertise. Currently pursuing a{" "}
-            <span className="font-semibold text-gray-800">BSc in CSIT</span>, I bring fresh perspectives to 
-            my work at <span className="font-semibold text-primary">NSK Group Nepal</span>, where I design 
-            innovative solutions that blend aesthetics and technology seamlessly.
+        {/* Right Section - Interactive Text */}
+        <div className="lg:w-1/2 lg:pl-16 space-y-4 mt-6 lg:mt-0">
+          <p className="text-lg opacity-80">
+            I started my career in graphic design and have since expanded into frontend development, blending design skills with coding knowledge. Currently pursuing a BSc in CSIT, I aim to bridge the gap between creativity and technology.
           </p>
 
-          <p className="mt-6 text-lg leading-relaxed">
-            With an innate drive for problem-solving and a love for innovation, I look forward to collaborating on projects that 
-            challenge boundaries and inspire creativity. Lets create something exceptional together!
+          <p className="text-lg opacity-80">
+            My journey is all about evolving and constantly learning new technologies to solve problems creatively. I look forward to working on exciting projects that challenge boundaries.
           </p>
 
-  
           <div className="mt-8">
             <a
               href="https://www.linkedin.com/in/susan-gautam-20502b311/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-10 py-4 text-lg font-semibold bg-secondary text-black rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+              className="inline-block px-12 py-4 text-lg font-semibold text-black bg-white border-2 border-primary rounded-full relative overflow-hidden group"
             >
-              Connect with Me
+              {/* Button Text */}
+              <span className="relative z-10 group-hover:text-white transition-colors duration-300">Connect with Me</span>
+              
+              {/* Background fill animation */}
+              <span className="absolute top-0 left-0 w-full h-full bg-primary transform scale-x-0 group-hover:scale-x-100 origin-left transition-all duration-1200 ease-in-out z-0"></span>
             </a>
           </div>
         </div>

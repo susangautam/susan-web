@@ -25,7 +25,7 @@ const Projects = () => {
       name: 'Alime Project',
       description: 'This is a clone of alime project.',
       link: 'https://github.com/susangautam/Alime-project', 
-      image: 'graphics-designing.png',
+      image: 'alime.png',
     },
   
   ];
