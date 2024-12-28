@@ -8,8 +8,14 @@ const Header = () => {
     <header className="bg-white text-primary sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
        
-          <a href="#home" className="cursor-pointer"><img src="logo-01.png" className="h-10"/></a>
-      {/* Nav Bar */}
+        <a href="#home" className="cursor-pointer">
+          <img 
+            src="logo-01.png" 
+            className="h-10 mt-0 sm:mt-4 md:mt-0" 
+          />
+        </a>
+
+        {/* Nav Bar */}
         <nav>
           <ul className="hidden md:flex space-x-12 text-lg mr-10">
             <li>
@@ -65,7 +71,7 @@ const Header = () => {
           </ul>
         </nav>
 
-      {/*Responsive Functions*/}  
+        {/*Responsive Functions*/}  
         <button
           onClick={() => setMenuOpen(!menuOpen)} 
           className="md:hidden text-black focus:outline-none hover:text-secondary cursor-pointer"
@@ -75,7 +81,7 @@ const Header = () => {
         </button>
       </div>
 
-    {/*Responsive*/}
+      {/*Responsive*/}  
       {menuOpen && (
         <div className="md:hidden bg-white text-black z-40">
           <ul className="flex flex-col space-y-4 p-4">

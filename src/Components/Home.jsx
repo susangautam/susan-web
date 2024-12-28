@@ -42,7 +42,7 @@ const Home = () => {
         <p className="text-lg md:text-xl text-gray-700">
           Graphics Designer | Frontend Developer
         </p>
-        <div className="text-gray-600 text-base md:text-md w-96 ">
+        <div className="text-gray-600 text-base md:text-md w-96">
           <p>Explore my work and experience in creative design and development.</p>
         </div>
         {/* Social Media Icons */}
@@ -75,12 +75,12 @@ const Home = () => {
       </div>
 
       {/* Right Image Section */}
-      <div className="relative flex items-center justify-center md:w-1/2">
+      <div className="relative flex items-center justify-center md:w-1/2 sm:mt-96 md:mt-0">
         <div className="relative bg-secondary p-3 rounded-lg shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-300">
           <img
             src="profile.jpg"
             alt="Susan Gautam"
-            className="rounded-lg w-96 h-96 object-cover transform hover:scale-105 transition-transform duration-300"
+            className="rounded-lg w-80 h-80 sm:w-96 sm:h-96 object-cover transform hover:scale-105 transition-transform duration-300"
           />
         </div>
       </div>
