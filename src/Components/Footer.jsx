@@ -31,19 +31,19 @@ function Footer() {
               <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-3 text-gray-400">
                 <li>
-                  <a href="#home" className="hover:text-white transition-colors">Home</a>
+                  <a href="#home" className="hover:text-secondary transition-colors">Home</a>
                 </li>
                 <li>
-                  <a href="#about" className="hover:text-white transition-colors">About</a>
+                  <a href="#about" className="hover:text-secondary transition-colors">About</a>
                 </li>
                 <li>
-                  <a href="#skills" className="hover:text-white transition-colors">Skills</a>
+                  <a href="#skills" className="hover:text-secondary transition-colors">Skills</a>
                 </li>
                 <li>
-                  <a href="#projects" className="hover:text-white transition-colors">Projects</a>
+                  <a href="#projects" className="hover:text-secondary transition-colors">Projects</a>
                 </li>
                 <li>
-                  <a href="#experience" className="hover:text-white transition-colors">Experience</a>
+                  <a href="#experience" className="hover:text-secondary transition-colors">Experience</a>
                 </li>
               </ul>
             </div>
@@ -57,14 +57,14 @@ function Footer() {
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="w-full p-3 bgnone rounded-md text-white border border-primary focus:outline-none"
+                  className="w-full p-3 bgnone rounded-md text-primary border border-primary focus:outline-none"
                 />
                 <textarea
                   placeholder="Your message"
-                  className="w-full p-3 bg-none rounded-md text-white border border-primary focus:outline-none"
+                  className="w-full p-3 bg-none rounded-md text-primary border border-primary focus:outline-none"
                   rows="4"
                 ></textarea>
-                <button type="submit" className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                <button type="submit" className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-secondary transition-colors duration-300 ease-in">
                   Send Message
                 </button>
               </form>
@@ -75,9 +75,9 @@ function Footer() {
           <div className="mt-12 text-center text-gray-400">
             <p>© {new Date().getFullYear()} Susan Gautam. All Rights Reserved.</p>
             <div className="mt-4 flex justify-center space-x-4">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+              <a href="#" className="hover:text-secondary transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-secondary transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-secondary transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>

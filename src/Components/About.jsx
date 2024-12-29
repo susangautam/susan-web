@@ -7,11 +7,20 @@ const About = () => {
         <div className="lg:w-1/2 space-y-6">
           <h2 className="text-5xl md:text-6xl font-extrabold text-primary">About Me</h2>
           <ul className="text-lg opacity-80">
-            <li className="mb-4">Graphic Design</li>
-            <li className="mb-4">Web Development (HTML, CSS, JavaScript, React)</li>
-            <li className="mb-4">UI/UX Design</li>
-            <li className="mb-4">Problem Solving & Innovation</li>
-          </ul>
+  <li className="mb-4 hover:text-secondary transition duration-300 ease-in-out cursor-pointer">
+    Graphic Design
+  </li>
+  <li className="mb-4 hover:text-secondary transition duration-300 ease-in-out cursor-pointer">
+    Frontend Development (HTML, CSS, JavaScript, React)
+  </li>
+  <li className="mb-4 hover:text-secondary transition duration-300 ease-in-out cursor-pointer">
+    UI/UX Design
+  </li>
+  <li className="mb-4 hover:text-secondary transition duration-300 ease-in-out cursor-pointer">
+    Problem Solving & Innovation
+  </li>
+</ul>
+
         </div>
 
         {/* Right Section - Interactive Text */}

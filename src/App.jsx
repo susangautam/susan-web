@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from "./Components/About";
+
 import Experience from "./Components/Experience";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -7,6 +7,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 
 import Footer from "./Components/Footer";
+import About from "./Components/About";
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
           element={
             <>
               <Home />
-              <About />
+              <About/>
               <Skills />
               <Experience />
               <Projects />
