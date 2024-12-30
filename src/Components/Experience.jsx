@@ -37,26 +37,33 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-16 bg-gray-50">
+    <section id="experience" className="py-16 bg-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-primary text-center mb-10">
           Experience
         </h2>
 
-        <div className="relative flex justify-center items-center">
+        <div className="relative flex flex-col items-center">
+          {/* Timeline Line */}
           <div className="absolute top-1/2 w-full border-t-2 border-gray-400 z-0"></div>
 
-          <div className="flex flex-wrap justify-center items-center space-x-8 z-10">
+          {/* Experience Cards */}
+          <div className="flex flex-wrap justify-center w-full space-y-8 sm:space-y-0 sm:flex-row sm:space-x-8 z-10">
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center w-full sm:w-1/2 lg:w-1/4 max-w-xs mb-8"
+                className="flex flex-col items-center w-full sm:w-1/2 md:w-1/4 max-w-xs group mb-8 sm:mb-0"
               >
-                <div className="w-16 h-16 rounded-full bg-primary border-4 border-white flex items-center justify-center mb-4 group hover:bg-secondary hover:border-secondary transition-all duration-300">
-                  <FontAwesomeIcon icon={exp.icon} className="text-white text-3xl group-hover:text-white transition-all duration-300" />
+                {/* Icon */}
+                <div className="w-16 h-16 rounded-full bg-primary border-4 border-white flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:border-secondary transition-all duration-300">
+                  <FontAwesomeIcon
+                    icon={exp.icon}
+                    className="text-white text-3xl group-hover:text-white transition-all duration-300"
+                  />
                 </div>
 
-                <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300">
+                {/* Card */}
+                <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 h-64">
                   <h3 className="text-lg font-bold text-gray-800">{exp.role}</h3>
                   <p className="text-sm text-secondary font-semibold mt-1">
                     {exp.organization}

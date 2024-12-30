@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white text-black">
+    <section id="about" className="py-20 bg-gray-200 text-black">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row">
         
         {/* Left Section - Timeline/Skills */}

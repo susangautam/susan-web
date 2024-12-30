@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa"; 
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Home = () => {
   useEffect(() => {
@@ -16,10 +16,23 @@ const Home = () => {
           background-position: 0% 50%;
         }
       }
-
       .animate-bgShift {
         animation: bgShift 10s ease infinite;
         background-size: 200% 200%;
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeInUp {
+        animation: fadeInUp 1s ease-out forwards;
       }
     `;
     document.head.appendChild(style);
@@ -29,24 +42,24 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-center justify-center md:justify-between h-screen px-6 md:px-12 bg-white relative overflow-hidden"
+      className="flex flex-col md:flex-row items-center justify-center md:justify-between h-screen px-6 md:px-12 bg-gray-200 relative overflow-hidden"
     >
       {/* Background Animation */}
       <div className="absolute top-0 left-0 w-full h-full animate-bgShift opacity-20"></div>
 
       {/* Left Text Section */}
       <div className="z-10 max-w-lg md:w-1/2 text-center md:text-left space-y-4">
-        <h1 className="text-5xl md:text-6xl font-bold text-primary">
+        <h1 className="text-5xl md:text-6xl font-bold text-primary animate-fadeInUp">
           Susan Gautam
         </h1>
-        <p className="text-lg md:text-xl text-gray-700">
+        <p className="text-lg md:text-xl text-gray-700 animate-fadeInUp" style={{ animationDelay: "0.2s" }}>
           Graphics Designer | Frontend Developer
         </p>
-        <div className="text-gray-600 text-base md:text-md w-96">
+        <div className="text-gray-600 text-base md:text-md w-96 animate-fadeInUp" style={{ animationDelay: "0.4s" }}>
           <p>Explore my work and experience in creative design and development.</p>
         </div>
         {/* Social Media Icons */}
-        <div className="mt-4 flex space-x-4 justify-center md:justify-start">
+        <div className="mt-4 flex space-x-4 justify-center md:justify-start animate-fadeInUp" style={{ animationDelay: "0.6s" }}>
           <a
             href="https://facebook.com"
             target="_blank"
@@ -78,7 +91,7 @@ const Home = () => {
       <div className="relative flex items-center justify-center md:w-1/2 sm:mt-96 md:mt-0">
         <div className="relative bg-secondary p-3 rounded-lg shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-300">
           <img
-            src="profile.jpg"
+            src="photo.jpg"
             alt="Susan Gautam"
             className="rounded-lg w-80 h-80 sm:w-96 sm:h-96 object-cover transform hover:scale-105 transition-transform duration-300"
           />

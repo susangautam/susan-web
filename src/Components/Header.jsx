@@ -5,7 +5,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white text-primary sticky top-0 z-50 shadow-md">
+    <header className="bg-gray-200 text-primary sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
        
         <a href="#home" className="cursor-pointer">
