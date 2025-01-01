@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:"/susan-web/",
+ 
   plugins: [react()],
+  base:"/susan-web/",
   resolve: {
     alias: {
       "@": "/src",
