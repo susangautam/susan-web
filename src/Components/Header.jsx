@@ -71,7 +71,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/*Responsive Functions*/}  
+        {/*Responsive Menu*/}  
         <button
           onClick={() => setMenuOpen(!menuOpen)} 
           className="md:hidden text-black focus:outline-none hover:text-secondary cursor-pointer"
